@@ -18,6 +18,6 @@ public class NondexGradlePlugin implements Plugin<Project> {
             task.doLast(s -> System.out.println("Hello from plugin 'edu.illinois.NondexGradlePlugin'"));
         });
         project.getTasks().create(NonDexHelp.TASK_NAME, NonDexHelp.class).init();
-        project.getTasks().create(NonDexTest.TASK_NAME, NonDexHelp.class).init();
+        project.getTasks().create(NonDexTest.TASK_NAME, NonDexTest.class).init();
     }
 }
