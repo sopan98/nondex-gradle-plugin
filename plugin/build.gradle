@@ -91,3 +91,10 @@ publishing {
         mavenLocal()
     }
 }
+//tasks.withType(org.gradle.jvm.tasks.Jar) {
+//    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+//}
+//configurations.implementation.canBeResolved = true
+//jar {
+//    from {configurations.implementation.collect { it.isDirectory() ? it : zipTree(it) } }
+//}
